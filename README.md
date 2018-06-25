@@ -14,7 +14,15 @@ host: '0.0.0.0',
 historyApiFallback: true,
 }
 
-6. В командной строке ввели: npm run build, ввели в браузере 127.0.0.1:1234 и получили:
+6.Прописываем импорты в index.jsx:
+import React from 'react';
+import { render as r } from 'react-dom';
+import { BrowserRouter, Switch, Route, Link } from 'reactrouter-dom';
+import Counter from './Counter';
+import Map from './Map';
+import Gallery from './Gallery';
+
+7. В командной строке ввели: npm run build, ввели в браузере 127.0.0.1:1234 и получили:
 ![alt text](https://github.com/nastyandreeva/router/blob/master/галерея.JPG)
 ![alt text](https://github.com/nastyandreeva/router/blob/master/датапик.JPG)
 ![alt text](https://github.com/nastyandreeva/router/blob/master/карта.JPG)
